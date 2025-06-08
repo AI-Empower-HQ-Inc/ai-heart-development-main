@@ -1,1 +1,1 @@
-export default function SpiritualGuru() { return "Spiritual guidance here"; }
+export default function SpiritualGuru() { return "Spiritual insight here"; }

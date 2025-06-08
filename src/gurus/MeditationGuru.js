@@ -1,1 +1,1 @@
-export default function MeditationGuru() { return "Meditation guidance here"; }
+export default function MeditationGuru() { return "Meditation practice here"; }

@@ -1,1 +1,1 @@
-export default function YogaGuru() { return "Yoga guidance here"; }
+export default function YogaGuru() { return "Yoga routines here"; }
