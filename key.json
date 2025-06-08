@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "chatgpt-connector-462102",
+  "private_key_id": "32e153d831d906d170dedb83767f762f6dfbbd88",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2MhBia45MO94K\nkAAUOhR5pgOd6Yjfe0yKtNg7mSrQO/KZ7IRmyKpKheJALAaNnRncEVVlBGKNKQ4m\nt19T4c9KxS6uDYgKE6uhhCR4DWFL66puGmGixiqvEcDP4HfMFjbWr9+hxkCkbBK/\najgOY4ElrBfaTDIoULaFuLI0BFwO6hygQq2JQJyab4SR1ss77A0GGYd/osHVyXhZ\nwhuQyOYmcpVNFrTUZaKJbVLpsAcTLrqKZwDuzPG2bGj1e4p96RvH0MNAqwTvv0Xz\nOR+e6zckMt+/1DgDTPbDS98Qp4vnlrxOVPq1/i/1o0zABUxLKX+VO5f2KDGukj/B\nXq2bZR/zAgMBAAECggEALrNVdMzJ7Ct6Ri3T/1tFzUqq6aqnLVV+8JzbQieIDFkZ\nXa/83hW4ZKK9tCI0yc7HhpugzmRZ2IH6AR2Gn0slpa42QWHxiVeyahOjf2w6kMnG\n5TL47M6ruTUtPXt1aYgWJWBuS5q0DhEvmwXgeXuy6lOax5c5UhEiP9NwRhoJ+L5E\nZTDw2sW25+3yGsbdXbuF5ureksP0C39vOU6+T9MIc6p5k9rYRdo7UeETaetfh1Xy\nM02fpvhoWhGa+sZqxOhC6s7SNVbhmKSVudg/2FH9n/BQU0FFIiBjJaVUMMEvEDqy\n4kgI0GZy//beM9KRGN7C88i47BOudylER+/kawBnKQKBgQD8m2TlUJex6ypmF4UC\nY2yy6FRYtimeFuBpisNrR6PdWuL2wbTDroxqFbFQIoylFqDTyJc3bmLeW4jIWwyG\nLcOcUZ+dldEw1WW7gI+43e03Xzzo4MZsArAEjxuYNG7QePOBmk1KeEQbalthN/ce\nEgGoP8VkxGf0bq13NUmq7S2/6QKBgQC4pI4zc1SnsoqG0ahCOAcWehRAuMcpMdDy\nFgyhgpG9pXiaoWmTM4K3/zzssDioZ6ZkAaErmLhqr2KOWSRMECfRJOS6iBSpU03y\nEdSiAPpAQ4poaW08VYEPtPpDVrIGmDENt3fAFWJPZH2suBnucIHqqhVxCA/ToJeU\nyITkpSqzewKBgDoLLuTuXtz4D3cEAoEo/Woirnbv7KIx2YEG7J5zCLktUCepHPM1\n4Xfi4ipqteydRXlEh1KqX7d+SvDW0wrl6yO5MbcRHM9eyZCLGvs8q2xkyucr9wwM\nlguGIq4Xpjrq//EQ1p+9ANFX4AV3yaW0N4NEnAPqiYSGBf/1U6cd9rw5AoGBAIIh\nz+rpFLfgOIuORgTtkelAfveigxNAfd+wtJQ7/tVnQtnQeyT4v99H7zttc3EVJAsF\nrv6X8xmVpGNo5hEJrdZUJzRj5hP0l1HNSUwoXjdeorS14PwN0xkr1toQxwWoy6G8\nNZTWPWRxEbXiRrxq5NVrrBLuuKDRZSPCMw8mbTLzAoGARXKu1iNJq/F7ViSsbBtv\ne3Kp1qWkGVT53nMG+5DlbXIOgkb/iFJ4PUkfkGXQTFKpmgsW3Ix4l5S5BfMHOmE3\niXPCtBdJaykcINMLfp+u62va6+JheXKiLvr2pw/f+Vd160UtnpHq09GdXVoFrk7N\no6Dh98s48SHGosVnFRl403o=\n-----END PRIVATE KEY-----\n",
+  "client_email": "chatgpt-google-connector@chatgpt-connector-462102.iam.gserviceaccount.com",
+  "client_id": "112836621722977428986",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/chatgpt-google-connector%40chatgpt-connector-462102.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
