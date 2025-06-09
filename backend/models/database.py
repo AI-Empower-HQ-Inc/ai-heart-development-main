@@ -1,0 +1,72 @@
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
+import uuid
+
+db = SQLAlchemy()
+
+class User(db.Model):
+    __tablename__ = 'users'
+    
+    id = db.Column(db.String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    email = db.Column(db.String(120), unique=True, nullable=True)
+    name = db.Column(db.String(100), nullable=True)
+    spiritual_level = db.Column(db.String(50), default='beginner')
+    preferred_gurus = db.Column(db.JSON)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    last_active = db.Column(db.DateTime, default=datetime.utcnow)
+    
+    # Relationships
+    sessions = db.relationship('SpiritualSession', backref='user', lazy=True)
+    
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'email': self.email,
+            'name': self.name,
+            'spiritual_level': self.spiritual_level,
+            'preferred_gurus': self.preferred_gurus,
+            'created_at': self.created_at.isoformat() if self.created_at else None
+        }
+
+class SpiritualSession(db.Model):
+    __tablename__ = 'spiritual_sessions'
+    
+    id = db.Column(db.String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    user_id = db.Column(db.String(36), db.ForeignKey('users.id'), nullable=True)
+    guru_type = db.Column(db.String(50), nullable=False)
+    question = db.Column(db.Text, nullable=False)
+    response = db.Column(db.Text, nullable=False)
+    satisfaction_rating = db.Column(db.Integer)
+    session_duration = db.Column(db.Integer)  # in seconds
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'guru_type': self.guru_type,
+            'question': self.question,
+            'response': self.response,
+            'satisfaction_rating': self.satisfaction_rating,
+            'created_at': self.created_at.isoformat()
+        }
+
+class DailyWisdom(db.Model):
+    __tablename__ = 'daily_wisdom'
+    
+    id = db.Column(db.String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    date = db.Column(db.Date, unique=True, nullable=False)
+    sloka_sanskrit = db.Column(db.Text)
+    sloka_translation = db.Column(db.Text)
+    wisdom_message = db.Column(db.Text)
+    guru_type = db.Column(db.String(50))
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'date': self.date.isoformat(),
+            'sloka_sanskrit': self.sloka_sanskrit,
+            'sloka_translation': self.sloka_translation,
+            'wisdom_message': self.wisdom_message,
+            'guru_type': self.guru_type
+        }
