@@ -1,1 +1,3 @@
-export default function YogaGuru() { return "Yoga routines here"; }
+export default function YogaGuru() {
+  return "Yoga wisdom: Asanas, breath, spiritual alignment.";
+}

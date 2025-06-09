@@ -1,1 +1,3 @@
-export function textToSpeech(text) { return "TTS placeholder"; }
+export function textToSpeech(text) {
+  return "TTS placeholder";
+}

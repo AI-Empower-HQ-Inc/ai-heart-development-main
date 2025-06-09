@@ -1,1 +1,3 @@
-export default function BhaktiGuru() { return "Bhakti guidance here"; }
+export default function BhaktiGuru() {
+  return "Bhakti teachings on love, surrender, devotion.";
+}

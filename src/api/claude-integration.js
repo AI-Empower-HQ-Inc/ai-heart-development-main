@@ -1,1 +1,3 @@
-export function chatWithClaude(input) { return "Claude response placeholder"; }
+export function chatWithClaude(input) {
+  return "Claude response placeholder";
+}

@@ -1,1 +1,3 @@
-export default function SlokaGuru() { return "Sloka guidance here"; }
+export default function SlokaGuru() {
+  return "Sloka guidance: Sanskrit + Meaning + Reflection.";
+}
