@@ -1,8 +1,4 @@
-flask==2.3.3
-openai==0.28.1
-google-cloud-secret-manager==2.16.4
-gunicorn==21.2.0
-requests==2.31.0
-anthropic
-anthropic
-anthropic
+Flask==2.3.3
+pytest==7.4.0
+pytest-cov==4.1.0
+flake8==6.1.0
