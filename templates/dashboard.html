@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}AI Empower Heart - Dashboard{% endblock %}
+
+{% block extra_css %}
+<style>
+    .metric-card {
+        border-left: 4px solid #007bff;
+    }
+    .metric-value {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .status-normal {
+        color: #28a745;
+    }
+    .status-elevated {
+        color: #ffc107;
+    }
+    .status-high {
+        color: #dc3545;
+    }
+    .status-low {
+        color: #6c757d;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Heart Health Dashboard</h1>
+
+<div class="row">
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card metric-card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Current Heart Rate</h5>
+                <p class="metric-value status-{{ data.classification }}">{{ data.heart_rate }} BPM</p>
+                <p class="card-text">Classification: {{ data.classification|capitalize }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card metric-card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Daily Average</h5>
+                <p class="metric-value">{{ data.daily_average }} BPM</p>
+                <p class="card-text">Based on today's measurements</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card metric-card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Weekly Trend</h5>
+                <p class="metric-value">{{ data.weekly_trend|capitalize }}</p>
+                <p class="card-text">Compared to last week</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card metric-card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Heart Health Score</h5>
+                <p class="metric-value">85/100</p>
+                <p class="card-text">Based on all metrics</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-lg-8">
+        <div class="card mb-4">
+            <div class="card-header">
+                Heart Rate Trends
+            </div>
+            <div class="card-body">
+                <!-- Placeholder for chart -->
+                <div class="bg-light p-5 text-center">
+                    <p class="mb-0">Heart rate chart will be displayed here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                Recommendations
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Maintain regular exercise routine</li>
+                    <li class="list-group-item">Stay hydrated throughout the day</li>
+                    <li class="list-group-item">Consider meditation for stress management</li>
+                    <li class="list-group-item">Schedule your next heart checkup</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Placeholder for dashboard JavaScript
+    console.log('Dashboard loaded with data:', {{ data|tojson }});
+</script>
+{% endblock %}

@@ -1,0 +1,25 @@
+/* Main styles for AI Empower Heart */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.heart-icon {
+    font-size: 1.2em;
+    color: #ff5b5b;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    border-top: 1px solid #eee;
+}
