@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Empower Heart Widget for Durable</title>
+</head>
+<body>
+    <div id="ai-empower-heart-widget">
+        <h3>🕉️ Ask Your Spiritual Question</h3>
+        <select id="guru-select">
+            <option value="spiritual">🙏 Spiritual Guru</option>
+            <option value="sloka">🕉️ Sloka Guru</option>
+            <option value="meditation">🧘 Meditation Guru</option>
+            <option value="bhakti">💝 Bhakti Guru</option>
+            <option value="karma">⚖️ Karma Guru</option>
+            <option value="yoga">🕉️ Yoga Guru</option>
+        </select>
+        <textarea id="spiritual-question" placeholder="Ask your spiritual question..."></textarea>
+        <button onclick="askSpiritual()">Get Guidance 🙏</button>
+        <div id="spiritual-response"></div>
+    </div>
+    
+    <script>
+        async function askSpiritual() {
+            const guru = document.getElementById('guru-select').value;
+            const question = document.getElementById('spiritual-question').value;
+            
+            // Call your AI Empower Heart API
+            const response = await fetch('YOUR_DEPLOYED_URL/api/spiritual-guidance', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({guru: guru, question: question})
+            });
+            
+            const data = await response.json();
+            document.getElementById('spiritual-response').innerHTML = data.response;
+        }
+    </script>
+</body>
+</html>
