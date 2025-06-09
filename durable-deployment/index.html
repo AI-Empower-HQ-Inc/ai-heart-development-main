@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Empower Heart - Spiritual Intelligence Revolution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .guru-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .guru-card {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .guru-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .guru-card.active {
+            background: rgba(255,215,0,0.3);
+            border-color: #FFD700;
+        }
+        
+        .interaction-area {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            margin-top: 30px;
+        }
+        
+        #spiritual-question {
+            width: 100%;
+            height: 120px;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            resize: vertical;
+            margin-bottom: 20px;
+        }
+        
+        .ask-button {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .ask-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        #response-area {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            display: none;
+            line-height: 1.6;
+            border-left: 4px solid #FFD700;
+        }
+        
+        @media (max-width: 768px) {
+            .guru-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🕉️ AI Empower Heart</h1>
+            <p>Spiritual Intelligence Revolution - Choose Your Guru for Ancient Wisdom</p>
+        </div>
+        
+        <div class="guru-grid">
+            <div class="guru-card" onclick="selectGuru('spiritual')">
+                <h3>🙏 AI Spiritual Guru</h3>
+                <p>Soul consciousness, eternal identity, and spiritual awakening guidance</p>
+            </div>
+            <div class="guru-card" onclick="selectGuru('sloka')">
+                <h3>🕉️ AI Sloka Guru</h3>
+                <p>Sanskrit verses from Bhagavad Gita, Upanishads, and ancient texts</p>
+            </div>
+            <div class="guru-card" onclick="selectGuru('meditation')">
+                <h3>🧘 AI Meditation Guru</h3>
+                <p>Inner peace, emotional healing, and mindfulness practices</p>
+            </div>
+            <div class="guru-card" onclick="selectGuru('bhakti')">
+                <h3>💝 AI Bhakti Guru</h3>
+                <p>Devotion, surrender, gratitude, and divine love teachings</p>
+            </div>
+            <div class="guru-card" onclick="selectGuru('karma')">
+                <h3>⚖️ AI Karma Guru</h3>
+                <p>Ethics, dharma, right action, and life's moral principles</p>
+            </div>
+            <div class="guru-card" onclick="selectGuru('yoga')">
+                <h3>🧘‍♀️ AI Yoga Guru</h3>
+                <p>Breath work, postures, chakras, and energetic alignment</p>
+            </div>
+        </div>
+        
+        <div class="interaction-area">
+            <div id="selected-guru">
+                <h3>Select a Guru above to begin your spiritual journey</h3>
+            </div>
+            
+            <textarea id="spiritual-question" placeholder="Ask your spiritual question here..." style="display: none;"></textarea>
+            
+            <button class="ask-button" onclick="askSpiritual()" style="display: none;" id="ask-btn">
+                Get Spiritual Guidance 🙏
+            </button>
+            
+            <div id="response-area"></div>
+        </div>
+    </div>
+
+    <script>
+        let selectedGuruType = '';
+        const gurus = {
+            spiritual: {
+                name: '🙏 AI Spiritual Guru',
+                prompt: 'You are a wise spiritual teacher focused on soul consciousness and eternal identity.'
+            },
+            sloka: {
+                name: '🕉️ AI Sloka Guru', 
+                prompt: 'You are a Sanskrit scholar specializing in ancient verses and their meanings.'
+            },
+            meditation: {
+                name: '🧘 AI Meditation Guru',
+                prompt: 'You are a meditation master teaching inner peace and mindfulness.'
+            },
+            bhakti: {
+                name: '💝 AI Bhakti Guru',
+                prompt: 'You are a devotion teacher focused on divine love and surrender.'
+            },
+            karma: {
+                name: '⚖️ AI Karma Guru',
+                prompt: 'You are an ethics teacher focused on dharma and right action.'
+            },
+            yoga: {
+                name: '🧘‍♀️ AI Yoga Guru',
+                prompt: 'You are a yoga master teaching breath, posture, and energy work.'
+            }
+        };
+
+        function selectGuru(guruType) {
+            selectedGuruType = guruType;
+            
+            // Update visual selection
+            document.querySelectorAll('.guru-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            event.target.closest('.guru-card').classList.add('active');
+            
+            // Show interaction area
+            document.getElementById('selected-guru').innerHTML = `
+                <h3>You selected: ${gurus[guruType].name}</h3>
+                <p>Ask your question below and receive spiritual guidance</p>
+            `;
+            
+            document.getElementById('spiritual-question').style.display = 'block';
+            document.getElementById('ask-btn').style.display = 'block';
+            document.getElementById('spiritual-question').focus();
+        }
+
+        async function askSpiritual() {
+            const question = document.getElementById('spiritual-question').value.trim();
+            const responseArea = document.getElementById('response-area');
+            
+            if (!selectedGuruType) {
+                alert('Please select a guru first');
+                return;
+            }
+            
+            if (!question) {
+                alert('Please enter your spiritual question');
+                return;
+            }
+            
+            responseArea.style.display = 'block';
+            responseArea.innerHTML = `
+                <div style="text-align: center; color: #FFD700;">
+                    <div style="font-size: 24px; margin-bottom: 10px;">🧘‍♂️</div>
+                    <div>The ${gurus[selectedGuruType].name} is contemplating your question...</div>
+                </div>
+            `;
+            
+            try {
+                // REPLACE WITH YOUR ACTUAL API URL
+                const API_URL = 'YOUR_CLOUD_SHELL_API_URL_HERE';
+                
+                const response = await fetch(`${API_URL}/api/ask-guru`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        guru_type: selectedGuruType,
+                        question: question
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    responseArea.innerHTML = `
+                        <div style="border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 15px; margin-bottom: 15px;">
+                            <strong style="color: #FFD700;">${data.guru_name} responds:</strong>
+                        </div>
+                        <div style="line-height: 1.8;">
+                            ${data.response.replace(/\n/g, '<br><br>')}
+                        </div>
+                    `;
+                } else {
+                    throw new Error(data.error || 'Unknown error');
+                }
+            } catch (error) {
+                responseArea.innerHTML = `
+                    <div style="text-align: center; color: #FFB6C1;">
+                        <div>🙏 The spiritual connection needs to be established.</div>
+                        <div style="font-size: 12px; margin-top: 10px;">
+                            Error: ${error.message}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        // Allow Enter key to submit
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('spiritual-question').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    askSpiritual();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
