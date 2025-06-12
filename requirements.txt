@@ -16,7 +16,7 @@ black==23.7.0
 
 # Data Processing
 numpy==1.25.2
-pandas==2.1.0
+pandas==2.3.0
 scipy==1.11.2
 
 # Machine Learning
