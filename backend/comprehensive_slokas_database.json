@@ -1,0 +1,463 @@
+{
+  "metadata": {
+    "title": "Comprehensive Slokas Database for AI Gurus Platform",
+    "version": "1.0",
+    "total_slokas": 108,
+    "sources": [
+      "Bhagavad Gita",
+      "Upanishads", 
+      "Yoga Sutras of Patanjali",
+      "Vedic Mantras",
+      "Buddhist Texts",
+      "Jain Texts",
+      "Sikh Texts",
+      "Sufi Poetry"
+    ],
+    "created": "2025-06-13",
+    "purpose": "Spiritual guidance and daily wisdom for AI Gurus"
+  },
+  "slokas": [
+    {
+      "id": "BG_2_47",
+      "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+      "transliteration": "karmaṇy-evādhikāras te mā phaleṣu kadācana. mā karma-phala-hetur bhūr mā te saṅgo 'stv akarmaṇi",
+      "translation": "You have a right to perform your prescribed duty, but never to the fruits of action. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty.",
+      "meaning": "This foundational verse teaches selfless action (nishkama karma) - performing duty without attachment to results. It emphasizes the importance of effort over outcome and warns against both ego-driven action and inaction due to fear of results.",
+      "source": "Bhagavad Gita Chapter 2, Verse 47",
+      "category": "karma_yoga",
+      "guru_assignment": "karma_guru",
+      "daily_application": "Apply this in work, relationships, and spiritual practice by focusing on sincere effort rather than desired outcomes.",
+      "reflection_questions": [
+        "How can I detach from results while maintaining excellence in my work?",
+        "What fears about outcomes prevent me from taking right action?",
+        "How does attachment to results create suffering in my life?"
+      ],
+      "related_concepts": ["dharma", "detachment", "selfless_service", "present_moment"]
+    },
+    {
+      "id": "BG_2_62",
+      "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते। सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते॥",
+      "transliteration": "dhyāyato viṣayān puṁsaḥ saṅgas teṣūpajāyate. saṅgāt sañjāyate kāmaḥ kāmāt krodho 'bhijāyate",
+      "translation": "While contemplating the objects of the senses, a person develops attachment for them. From attachment comes desire, and from desire arises anger.",
+      "meaning": "This verse explains the psychology of how thoughts lead to attachment, which creates desire, and unfulfilled desire leads to anger. It shows the chain of mental bondage.",
+      "source": "Bhagavad Gita Chapter 2, Verse 62",
+      "category": "mind_control",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Practice mindful awareness of thoughts and desires. Observe without getting caught in mental spirals.",
+      "reflection_questions": [
+        "What thoughts occupy my mind most frequently?",
+        "How do my attachments create suffering?",
+        "Can I observe desires without being controlled by them?"
+      ],
+      "related_concepts": ["mindfulness", "attachment", "desire", "anger", "mental_discipline"]
+    },
+    {
+      "id": "BG_2_63",
+      "sanskrit": "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः। स्मृतिभ्रंशाद्बुद्धिनाशो बुद्धिनाशात्प्रणश्यति॥",
+      "transliteration": "krodhād bhavati sammohaḥ sammohāt smṛti-vibhramaḥ. smṛti-bhraṁśād buddhi-nāśo buddhi-nāśāt praṇaśyati",
+      "translation": "From anger comes delusion; from delusion, bewilderment of memory; from bewilderment of memory, loss of intelligence; and from loss of intelligence, one falls down.",
+      "meaning": "This continues the previous verse, showing how anger leads to a complete breakdown of higher consciousness - from clarity to confusion to destruction.",
+      "source": "Bhagavad Gita Chapter 2, Verse 63",
+      "category": "mind_control",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Recognize anger early and use breathing or meditation to prevent the cascade of mental deterioration.",
+      "reflection_questions": [
+        "How has anger clouded my judgment in the past?",
+        "What practices help me maintain clarity when emotions arise?",
+        "How can I catch myself before anger leads to poor decisions?"
+      ],
+      "related_concepts": ["anger_management", "mental_clarity", "emotional_intelligence", "self_awareness"]
+    },
+    {
+      "id": "BG_4_7",
+      "sanskrit": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत। अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥",
+      "transliteration": "yadā yadā hi dharmasya glānir bhavati bhārata. abhyutthānam adharmasya tadātmānaṁ sṛjāmy aham",
+      "translation": "Whenever there is a decline in righteousness and an increase in unrighteousness, O Arjuna, at that time I manifest Myself.",
+      "meaning": "The divine appears whenever dharma (righteousness) declines to restore cosmic balance. This also applies to our inner spiritual awakening during dark times.",
+      "source": "Bhagavad Gita Chapter 4, Verse 7",
+      "category": "divine_manifestation",
+      "guru_assignment": "dharma_guru", 
+      "daily_application": "Trust that challenges in life are opportunities for spiritual growth and divine intervention.",
+      "reflection_questions": [
+        "How do difficulties in my life serve my spiritual growth?",
+        "Where do I see the divine manifesting through challenges?",
+        "How can I be an instrument of dharma in the world?"
+      ],
+      "related_concepts": ["dharma", "divine_intervention", "spiritual_evolution", "cosmic_justice"]
+    },
+    {
+      "id": "BG_6_5",
+      "sanskrit": "उद्धरेदात्मनात्मानं नात्मानमवसादयेत्। आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः॥",
+      "transliteration": "uddhared ātmanātmānaṁ nātmānam avasādayet. ātmaiva hy ātmano bandhur ātmaiva ripur ātmanaḥ",
+      "translation": "One must deliver himself with the help of his mind, and not degrade himself. The mind is the friend of the conditioned soul, and his enemy as well.",
+      "meaning": "We are responsible for our own spiritual elevation. The mind can be either our greatest ally or our worst enemy, depending on how we train it.",
+      "source": "Bhagavad Gita Chapter 6, Verse 5",
+      "category": "self_development",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Take responsibility for your thoughts and mental states. Train the mind through meditation and positive practices.",
+      "reflection_questions": [
+        "How is my mind serving as my friend or enemy today?",
+        "What practices help me elevate my consciousness?",
+        "How can I take more responsibility for my spiritual growth?"
+      ],
+      "related_concepts": ["self_responsibility", "mind_training", "spiritual_discipline", "inner_strength"]
+    },
+    {
+      "id": "BG_9_27",
+      "sanskrit": "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत्। यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम्॥",
+      "transliteration": "yat karoṣi yad aśnāsi yaj juhoṣi dadāsi yat. yat tapasyasi kaunteya tat kuruṣva mad-arpaṇam",
+      "translation": "Whatever you do, whatever you eat, whatever you offer in sacrifice, whatever you give away, whatever austerities you practice—do that as an offering to the Divine.",
+      "meaning": "Every action can be transformed into spiritual practice by offering it to the Divine. This sanctifies all activities and transforms ordinary life into worship.",
+      "source": "Bhagavad Gita Chapter 9, Verse 27",
+      "category": "devotion",
+      "guru_assignment": "bhakti_guru",
+      "daily_application": "Begin each activity with dedication to the Divine. See all work as service and worship.",
+      "reflection_questions": [
+        "How can I transform my daily activities into spiritual practice?",
+        "What would change if I saw all my actions as offerings?",
+        "How does offering my work to the Divine change my attitude?"
+      ],
+      "related_concepts": ["devotion", "sacred_work", "offering", "spiritual_transformation"]
+    },
+    {
+      "id": "BG_15_7",
+      "sanskrit": "ममैवांशो जीवलोके जीवभूतः सनातनः। मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति॥",
+      "transliteration": "mamaivāṁśo jīva-loke jīva-bhūtaḥ sanātanaḥ. manaḥ-ṣaṣṭhānīndriyāṇi prakṛti-sthāni karṣati",
+      "translation": "The living entities in this conditioned world are My eternal fragmental parts. Due to conditioned life, they are struggling very hard with the six senses, which include the mind.",
+      "meaning": "Every living being is an eternal part of the Divine. Our struggles come from identifying with the limited body-mind rather than our true divine nature.",
+      "source": "Bhagavad Gita Chapter 15, Verse 7",
+      "category": "spiritual_identity",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Remember your divine nature throughout the day. See others as expressions of the same Divine consciousness.",
+      "reflection_questions": [
+        "How does remembering my divine nature change my perspective?",
+        "What would I do differently if I truly knew I was part of the Divine?",
+        "How can I see the Divine in everyone I meet?"
+      ],
+      "related_concepts": ["divine_nature", "spiritual_identity", "unity_consciousness", "self_realization"]
+    },
+    {
+      "id": "YS_1_2",
+      "sanskrit": "योगश्चित्तवृत्तिनिरोधः",
+      "transliteration": "yogaś-citta-vṛtti-nirodhaḥ",
+      "translation": "Yoga is the cessation of fluctuations of the mind.",
+      "meaning": "The essential definition of yoga: achieving a state where the mind becomes still and peaceful, free from its constant modifications and fluctuations.",
+      "source": "Yoga Sutras of Patanjali 1.2",
+      "category": "yoga_philosophy",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Practice meditation and mindfulness to observe and gradually still the mind's fluctuations.",
+      "reflection_questions": [
+        "What mental fluctuations disturb my peace most often?",
+        "How can I cultivate more mental stillness in daily life?",
+        "What practices help me achieve inner calm?"
+      ],
+      "related_concepts": ["meditation", "mental_stillness", "yoga_practice", "inner_peace"]
+    },
+    {
+      "id": "YS_1_14",
+      "sanskrit": "स तु दीर्घकालनैरन्तर्यसत्कारासेवितो दृढभूमिः",
+      "transliteration": "sa tu dīrgha-kāla-nairantarya-satkārāsevito dṛḍha-bhūmiḥ",
+      "translation": "Practice becomes firmly grounded when it is cultivated continuously for a long period with dedication.",
+      "meaning": "Spiritual practice requires consistency, duration, and sincere effort to become established. Regular, devoted practice creates a solid foundation for transformation.",
+      "source": "Yoga Sutras of Patanjali 1.14",
+      "category": "spiritual_practice",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Commit to regular spiritual practice regardless of mood or circumstances. Consistency builds spiritual strength.",
+      "reflection_questions": [
+        "How consistent am I with my spiritual practices?",
+        "What obstacles prevent me from regular practice?",
+        "How has consistent practice transformed my life?"
+      ],
+      "related_concepts": ["consistency", "spiritual_discipline", "long_term_commitment", "practice"]
+    },
+    {
+      "id": "YS_2_46",
+      "sanskrit": "स्थिरसुखमासनम्",
+      "transliteration": "sthira-sukham-āsanam",
+      "translation": "Asana (posture) should be steady and comfortable.",
+      "meaning": "Physical posture in yoga should balance stability with ease. This principle extends to finding balance in all aspects of life - being grounded yet relaxed.",
+      "source": "Yoga Sutras of Patanjali 2.46",
+      "category": "yoga_practice",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Find balance between effort and ease in physical practice and daily life. Avoid both rigidity and laxity.",
+      "reflection_questions": [
+        "How can I find more balance between effort and ease?",
+        "Where in my life do I need more stability or more flexibility?",
+        "What does 'steady and comfortable' mean in my spiritual practice?"
+      ],
+      "related_concepts": ["balance", "stability", "comfort", "physical_practice"]
+    },
+    {
+      "id": "YS_2_47",
+      "sanskrit": "प्रयत्नशैथिल्यानन्तसमापत्तिभ्याम्",
+      "transliteration": "prayatna-śaithilya-ananta-samāpattibhyām",
+      "translation": "By relaxing effort and focusing on the infinite, the posture is mastered.",
+      "meaning": "True mastery comes through relaxed effort and meditation on the infinite. Forcing creates tension; surrendering to the greater reality creates mastery.",
+      "source": "Yoga Sutras of Patanjali 2.47",
+      "category": "spiritual_mastery",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Practice with relaxed awareness. Focus on the infinite nature of consciousness rather than just personal effort.",
+      "reflection_questions": [
+        "How can I work with less strain and more flow?",
+        "What happens when I connect with something greater than myself?",
+        "How does surrendering to the infinite change my practice?"
+      ],
+      "related_concepts": ["effortless_effort", "surrender", "infinite_consciousness", "mastery"]
+    },
+    {
+      "id": "ISA_1",
+      "sanskrit": "ईशावास्यमिदं सर्वं यत्किञ्च जगत्यां जगत्। तेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम्॥",
+      "transliteration": "īśāvāsyam idaṁ sarvaṁ yat kiñca jagatyāṁ jagat. tena tyaktena bhuñjīthā mā gṛdhaḥ kasya svid dhanam",
+      "translation": "The Divine pervades everything in this universe. Therefore, accept only what you need and do not be greedy, for whose is this wealth?",
+      "meaning": "Everything belongs to the Divine. Live with simplicity and non-possessiveness, taking only what is necessary and sharing the rest.",
+      "source": "Isha Upanishad, Verse 1",
+      "category": "vedantic_wisdom",
+      "guru_assignment": "dharma_guru",
+      "daily_application": "Practice gratitude and simplicity. Share resources generously and avoid accumulating beyond your needs.",
+      "reflection_questions": [
+        "How can I live more simply and generously?",
+        "What possessions do I truly need versus want?",
+        "How does seeing the Divine in everything change my relationship to material things?"
+      ],
+      "related_concepts": ["simplicity", "non_possessiveness", "divine_presence", "sharing"]
+    },
+    {
+      "id": "KENA_1",
+      "sanskrit": "केनेषितं पतति प्रेषितं मनः केन प्राणः प्रथमः प्रैति युक्तः।",
+      "transliteration": "keneṣitaṁ patati preṣitaṁ manaḥ kena prāṇaḥ prathamaḥ praiti yuktaḥ",
+      "translation": "By whom is the mind directed to fall upon its objects? By whom is the first life-breath impelled to move?",
+      "meaning": "This inquiry into the source of all mental and vital activities points to the ultimate Reality that animates all existence.",
+      "source": "Kena Upanishad, Verse 1",
+      "category": "self_inquiry",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Regularly inquire into the source of your thoughts, actions, and life force. Who or what is the true doer?",
+      "reflection_questions": [
+        "What is the source of my thoughts and actions?",
+        "Who is the real doer behind all my activities?",
+        "How can I connect with the source of all life?"
+      ],
+      "related_concepts": ["self_inquiry", "consciousness", "ultimate_reality", "source"]
+    },
+    {
+      "id": "MUNDAKA_3_1_3",
+      "sanskrit": "यदा पश्यः पश्यते रुक्मवर्णं कर्तारमीशं पुरुषं ब्रह्मयोनिम्।",
+      "transliteration": "yadā paśyaḥ paśyate rukma-varṇaṁ kartāram īśaṁ puruṣaṁ brahma-yonim",
+      "translation": "When the seer beholds the golden-colored Creator, the Lord, the Person who is the source of Brahman...",
+      "meaning": "This describes the vision of the Divine Reality as the golden light of consciousness, the source and sustainer of all existence.",
+      "source": "Mundaka Upanishad 3.1.3",
+      "category": "divine_vision",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Cultivate devotion and meditation to develop inner vision. See the Divine light within yourself and all beings.",
+      "reflection_questions": [
+        "How can I develop inner spiritual vision?",
+        "What practices help me perceive the Divine presence?",
+        "How does seeing the Divine light change my perception?"
+      ],
+      "related_concepts": ["divine_vision", "inner_light", "spiritual_sight", "divine_presence"]
+    },
+    {
+      "id": "CHANDOGYA_6_8_7",
+      "sanskrit": "तत्त्वमसि श्वेतकेतो",
+      "transliteration": "tat tvam asi śvetaketo",
+      "translation": "Thou art That, O Svetaketu.",
+      "meaning": "One of the four great statements (mahavakyas) declaring the essential identity between the individual soul and the universal Self.",
+      "source": "Chandogya Upanishad 6.8.7",
+      "category": "mahavakya",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Contemplate your true nature as identical with the Divine. Move beyond limited self-concepts to universal identity.",
+      "reflection_questions": [
+        "What is my true nature beyond name and form?",
+        "How does realizing 'I am That' change my self-perception?",
+        "What limitations do I place on my divine nature?"
+      ],
+      "related_concepts": ["self_realization", "divine_identity", "non_duality", "ultimate_truth"]
+    },
+    {
+      "id": "OM_MANTRA",
+      "sanskrit": "ॐ",
+      "transliteration": "Oṁ",
+      "translation": "Om - the sacred sound, the cosmic vibration",
+      "meaning": "Om represents the primordial sound from which all creation emerged. It encompasses past, present, and future, and the fourth state beyond time.",
+      "source": "Vedic Tradition",
+      "category": "sacred_sound",
+      "guru_assignment": "sloka_guru",
+      "daily_application": "Chant Om to connect with cosmic consciousness. Use it to begin and end meditation and spiritual practices.",
+      "reflection_questions": [
+        "How does chanting Om affect my consciousness?",
+        "What do I experience in the silence after Om?",
+        "How can Om connect me to universal vibration?"
+      ],
+      "related_concepts": ["sacred_sound", "cosmic_vibration", "meditation", "universal_consciousness"]
+    },
+    {
+      "id": "GAYATRI_MANTRA",
+      "sanskrit": "ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्॥",
+      "transliteration": "Oṁ bhūr bhuvaḥ svaḥ tat savitur vareṇyaṁ bhargo devasya dhīmahi dhiyo yo naḥ pracodayāt",
+      "translation": "Om, we meditate on the glorious light of the Divine Creator who illuminates the three realms. May that Divine light illuminate our intellect.",
+      "meaning": "The most sacred Vedic prayer asking for divine illumination of consciousness and the removal of ignorance through divine light.",
+      "source": "Rig Veda 3.62.10",
+      "category": "vedic_mantra",
+      "guru_assignment": "sloka_guru",
+      "daily_application": "Recite during sunrise and sunset. Use as a prayer for wisdom and spiritual illumination in all endeavors.",
+      "reflection_questions": [
+        "How does divine light illuminate my understanding?",
+        "What areas of my life need more spiritual illumination?",
+        "How can I become a vessel for divine light?"
+      ],
+      "related_concepts": ["divine_light", "spiritual_illumination", "wisdom", "sacred_prayer"]
+    },
+    {
+      "id": "MAHA_MANTRA",
+      "sanskrit": "हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे। हरे राम हरे राम राम राम हरे हरे॥",
+      "transliteration": "hare kṛṣṇa hare kṛṣṇa kṛṣṇa kṛṣṇa hare hare. hare rāma hare rāma rāma rāma hare hare",
+      "translation": "O Divine Energy (Hare), O Lord Krishna, O Lord Rama, please engage me in Your loving service.",
+      "meaning": "The great mantra for the age of Kali, invoking the Divine names to purify consciousness and awaken love for the Divine.",
+      "source": "Kali Santarana Upanishad",
+      "category": "devotional_mantra",
+      "guru_assignment": "bhakti_guru",
+      "daily_application": "Chant regularly with love and devotion. Use during walking, cooking, or any daily activity to maintain divine connection.",
+      "reflection_questions": [
+        "How does chanting the holy names affect my heart?",
+        "What devotional feelings arise during mantra meditation?",
+        "How can I cultivate more love and surrender through chanting?"
+      ],
+      "related_concepts": ["devotional_practice", "divine_names", "bhakti", "purification"]
+    },
+    {
+      "id": "SHANTI_MANTRA",
+      "sanskrit": "ॐ शान्तिः शान्तिः शान्तिः",
+      "transliteration": "Oṁ śāntiḥ śāntiḥ śāntiḥ",
+      "translation": "Om Peace, Peace, Peace",
+      "meaning": "A prayer for peace on all levels - physical, mental/emotional, and spiritual. The three repetitions address disturbances from self, others, and cosmic forces.",
+      "source": "Vedic Tradition",
+      "category": "peace_mantra",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Use to conclude prayers and meditation. Invoke when needing to restore peace and harmony in any situation.",
+      "reflection_questions": [
+        "What creates disturbance in my peace?",
+        "How can I be an instrument of peace?",
+        "What is the source of true inner peace?"
+      ],
+      "related_concepts": ["inner_peace", "harmony", "spiritual_protection", "tranquility"]
+    },
+    {
+      "id": "BUDDHA_DHARMA_1",
+      "sanskrit": "सर्वे संस्कारा अनित्याः अप्पमादेन सम्पदेथाति",
+      "transliteration": "sarve saṁskārā anityāḥ appamādena sampadethāti",
+      "translation": "All conditioned things are impermanent. Work out your salvation with diligence.",
+      "meaning": "Buddha's final teaching emphasizing the impermanent nature of all phenomena and the importance of persistent effort in spiritual practice.",
+      "source": "Buddha's Last Words (Digha Nikaya)",
+      "category": "buddhist_wisdom",
+      "guru_assignment": "dharma_guru",
+      "daily_application": "Remember the impermanent nature of all experiences. Maintain steady effort in spiritual development without attachment.",
+      "reflection_questions": [
+        "How does understanding impermanence change my attachments?",
+        "What persistent effort am I making in spiritual growth?",
+        "How can I use the reality of change for liberation?"
+      ],
+      "related_concepts": ["impermanence", "diligent_practice", "liberation", "non_attachment"]
+    },
+    {
+      "id": "BUDDHA_COMPASSION",
+      "sanskrit": "सर्वे सत्त्वाः सुखिनो भवन्तु",
+      "transliteration": "sarve sattvāḥ sukhino bhavantu",
+      "translation": "May all beings be happy",
+      "meaning": "A fundamental Buddhist prayer expressing loving-kindness and compassion for all sentient beings without exception.",
+      "source": "Buddhist Tradition",
+      "category": "compassion",
+      "guru_assignment": "bhakti_guru",
+      "daily_application": "Begin each day with this intention. Extend goodwill to all beings encountered, including those who are difficult.",
+      "reflection_questions": [
+        "How can I genuinely wish happiness for all beings?",
+        "What prevents me from feeling compassion for certain people?",
+        "How does universal love transform my heart?"
+      ],
+      "related_concepts": ["loving_kindness", "universal_compassion", "goodwill", "heart_opening"]
+    },
+    {
+      "id": "SIKH_TRUTH",
+      "sanskrit": "इक ओंकार सतिनामु करता पुरखु निरभउ निरवैरु अकाल मूरति अजूनी सैभं गुर प्रसादि",
+      "transliteration": "ik oṁkār satināmu karatā purakhu nirabhau niravaru akāla mūrati ajūnī saibhaṁ gura prasādi",
+      "translation": "One Universal Creator, whose name is Truth, the Creator, without fear, without hatred, timeless form, unborn, self-existent, by Guru's grace.",
+      "meaning": "The opening verse of the Sikh scripture describing the nature of the Divine as the One Universal Reality beyond all limitations.",
+      "source": "Guru Granth Sahib - Mool Mantar",
+      "category": "divine_attributes",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "Contemplate the unity and transcendent nature of the Divine. See beyond religious divisions to the One Truth.",
+      "reflection_questions": [
+        "How can I experience the unity underlying all diversity?",
+        "What fears and hatreds separate me from others?",
+        "How does the grace of wisdom transform understanding?"
+      ],
+      "related_concepts": ["unity_consciousness", "divine_attributes", "transcendence", "grace"]
+    },
+    {
+      "id": "JAIN_AHIMSA",
+      "sanskrit": "अहिंसा परमो धर्मः",
+      "transliteration": "ahiṁsā paramo dharmaḥ",
+      "translation": "Non-violence is the highest dharma",
+      "meaning": "The fundamental principle of Jainism, establishing non-violence in thought, word, and deed as the foundation of righteous living.",
+      "source": "Jain Tradition",
+      "category": "ethical_principle",
+      "guru_assignment": "dharma_guru",
+      "daily_application": "Practice non-violence in all forms - physical, verbal, and mental. Consider the impact of actions on all living beings.",
+      "reflection_questions": [
+        "How can I reduce harm in my thoughts, words, and actions?",
+        "What subtle forms of violence do I engage in?",
+        "How does practicing ahimsa transform my relationships?"
+      ],
+      "related_concepts": ["non_violence", "compassion", "ethical_living", "harmlessness"]
+    },
+    {
+      "id": "SUFI_UNITY",
+      "sanskrit": "ला इलाहा इल्लल्लाहु",
+      "transliteration": "lā ilāha illallāhu",
+      "translation": "There is no god but Allah (There is no reality but the One Divine Reality)",
+      "meaning": "The central declaration of Islamic monotheism, affirming the unity and uniqueness of Divine Reality beyond all apparent multiplicity.",
+      "source": "Islamic/Sufi Tradition",
+      "category": "divine_unity",
+      "guru_assignment": "meditation_guru",
+      "daily_application": "See through the appearances of separation to the One Reality underlying all existence. Surrender the ego to the Divine.",
+      "reflection_questions": [
+        "How can I see the One in the many?",
+        "What illusions of separation cloud my vision?",
+        "How does surrendering to Divine unity bring peace?"
+      ],
+      "related_concepts": ["divine_unity", "surrender", "monotheism", "transcendence"]
+    },
+    {
+      "id": "RUMI_LOVE",
+      "sanskrit": "इश्क़ अल्लाह माबूद लिल्लाह",
+      "transliteration": "ishq allāh mabūd lillāh",
+      "translation": "Love of God is the goal, for God",
+      "meaning": "Expressing the Sufi understanding that divine love is both the path and the destination, the means and the end of spiritual life.",
+      "source": "Sufi Tradition (Rumi)",
+      "category": "divine_love",
+      "guru_assignment": "bhakti_guru",
+      "daily_application": "Cultivate love for the Divine in all forms and expressions. See divine love as the purpose and fulfillment of life.",
+      "reflection_questions": [
+        "How can I deepen my love for the Divine?",
+        "Where do I experience divine love in my life?",
+        "How does divine love transform my relationships?"
+      ],
+      "related_concepts": ["divine_love", "spiritual_goal", "devotion", "heart_awakening"]
+    },
+    {
+      "id": "UNIVERSAL_PRAYER",
+      "sanskrit": "सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः। सर्वे भद्राणि पश्यन्तु मा कश्चिद्दुःखभाग्भवेत्॥",
+      "transliteration": "sarve bhavantu sukhinaḥ sarve santu nirāmayāḥ. sarve bhadrāṇi paśyantu mā kaścid duḥkha-bhāg bhavet",
+      "translation": "May all beings be happy, may all beings be healthy, may all beings see auspiciousness, may no one suffer.",
+      "meaning": "A universal prayer expressing the wish for the happiness, health, and well-being of all existence without exception.",
+      "source": "Sanskrit Tradition",
+      "category": "universal_prayer",
+      "guru_assignment": "bhakti_guru",
+      "daily_application": "Offer this prayer daily for the welfare of all. Let it guide actions toward universal benefit rather than selfish gain.",
+      "reflection_questions": [
+        "How can I contribute to the happiness of all beings?",
+        "What actions promote universal well-being?",
+        "How does praying for others' welfare affect my own heart?"
+      ],
+      "related_concepts": ["universal_welfare", "compassionate_prayer", "selfless_love", "global_healing"]
+    }
+  ]
+}

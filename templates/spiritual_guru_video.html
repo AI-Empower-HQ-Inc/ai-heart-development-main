@@ -1,0 +1,89 @@
+<!-- Spiritual Guru Video Section -->
+<div style="min-height: 100vh; background: #000033; color: white; font-family: Arial, sans-serif;">
+    <!-- Header Section -->
+    <div style="padding: 20px; text-align: center; background: rgba(0,0,51,0.5);">
+        <h1 style="color: #FFD700; margin: 0;">🕉️ AI Empower Heart</h1>
+        <p style="color: #ffffff; margin-top: 10px;">Your Spiritual Guide</p>
+    </div>
+
+    <!-- Video Content Section -->
+    <div style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+        <div style="background: rgba(0,0,51,0.8); border-radius: 15px; padding: 30px; margin-bottom: 40px;">
+            <!-- Video Player -->
+            <div id="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin-bottom: 20px;">
+                <iframe 
+                    id="spiritual-video"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                    src="about:blank"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Video Controls -->
+            <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
+                <button onclick="loadVideo('meditation')" 
+                        style="background: #FFD700; color: #000033; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                    Guided Meditation
+                </button>
+                <button onclick="loadVideo('wisdom')" 
+                        style="background: #FFD700; color: #000033; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                    Wisdom Talks
+                </button>
+                <button onclick="loadVideo('practice')" 
+                        style="background: #FFD700; color: #000033; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                    Spiritual Practices
+                </button>
+            </div>
+        </div>
+
+        <!-- Wisdom Text Section -->
+        <div style="background: rgba(0,0,51,0.8); border-radius: 15px; padding: 30px;">
+            <h2 style="color: #FFD700; text-align: center; margin-bottom: 20px;">" The journey of a thousand miles begins with a single step. The journey within begins with a single breath. "</h2>
+            <p style="color: #ffffff; text-align: center; line-height: 1.6;">
+                Ask me anything about spirituality, meditation, mindfulness, or the path to inner peace. 
+                I'm here to guide you from beginner to advanced spiritual practices.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+const videoLibrary = {
+    meditation: {
+        title: "Guided Meditation",
+        videos: [
+            "https://www.youtube.com/embed/O-6f5wQXSu8",  // Example: Guided meditation
+            "https://www.youtube.com/embed/ZToicYcHIOU",  // Example: Breathing meditation
+            "https://www.youtube.com/embed/U9YKY7fdwyg"   // Example: Mindfulness meditation
+        ]
+    },
+    wisdom: {
+        title: "Wisdom Talks",
+        videos: [
+            "https://www.youtube.com/embed/y6GEMN5PIos",  // Example: Spiritual wisdom
+            "https://www.youtube.com/embed/pL7LPTgzkvU",  // Example: Life purpose
+            "https://www.youtube.com/embed/Q-tRXsteuRA"   // Example: Inner peace
+        ]
+    },
+    practice: {
+        title: "Spiritual Practices",
+        videos: [
+            "https://www.youtube.com/embed/nQkzWpur7uE",  // Example: Daily practices
+            "https://www.youtube.com/embed/hJbRpHZr_d0",  // Example: Mindful living
+            "https://www.youtube.com/embed/d4S4twjeWTs"   // Example: Spiritual routines
+        ]
+    }
+};
+
+function loadVideo(category) {
+    const videos = videoLibrary[category].videos;
+    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+    const videoPlayer = document.getElementById('spiritual-video');
+    videoPlayer.src = randomVideo;
+}
+
+// Load default meditation video on page load
+document.addEventListener('DOMContentLoaded', () => {
+    loadVideo('meditation');
+});
+</script>

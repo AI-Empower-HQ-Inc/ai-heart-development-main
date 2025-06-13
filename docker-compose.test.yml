@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  test-db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=test_user
+      - POSTGRES_PASSWORD=test_pass
+      - POSTGRES_DB=test_db
+    ports:
+      - "5433:5432"  # Different port from main db
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U test_user -d test_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend-tests:
+    build:
+      context: .
+      target: backend
+    environment:
+      - FLASK_ENV=testing
+      - DATABASE_URL=postgresql://test_user:test_pass@test-db:5432/test_db
+      - SECRET_KEY=test-key
+      - PYTHONPATH=/app
+    volumes:
+      - ./backend:/app/backend
+      - ./tests:/app/tests
+    depends_on:
+      test-db:
+        condition: service_healthy
+    command: pytest tests/ --cov=backend --cov-report=html --cov-report=term-missing
+
+  frontend-tests:
+    build:
+      context: .
+      target: frontend-build
+    volumes:
+      - ./src:/frontend/src
+      - ./static:/frontend/static
+    command: npm test -- --coverage

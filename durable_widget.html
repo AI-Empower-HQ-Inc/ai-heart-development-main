@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Empower Heart - Spiritual Wisdom Platform</title>
+    <style>
+        #ai-empower-heart-widget {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(145deg, #f0f8ff 0%, #e6e9f0 100%);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .widget-header {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #guru-select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background: white;
+        }
+
+        #spiritual-question {
+            width: 100%;
+            height: 100px;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            resize: vertical;
+        }
+
+        .wisdom-button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(145deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .wisdom-button:hover {
+            transform: translateY(-2px);
+        }
+
+        #spiritual-response {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            min-height: 100px;
+        }
+
+        .loading {
+            text-align: center;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            #ai-empower-heart-widget {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="ai-empower-heart-widget">
+        <div class="widget-header">
+            <h2>🕉️ AI Empower Heart</h2>
+            <p>Discover Ancient Wisdom for Modern Life</p>
+        </div>
+        
+        <select id="guru-select">
+            <option value="spiritual">🙏 Spiritual Guru - Universal Wisdom</option>
+            <option value="sloka">🕉️ Sloka Guru - Sacred Verses</option>
+            <option value="meditation">🧘 Meditation Guru - Inner Peace</option>
+            <option value="bhakti">💝 Bhakti Guru - Divine Love</option>
+            <option value="karma">⚖️ Karma Guru - Life's Purpose</option>
+            <option value="yoga">🕉️ Yoga Guru - Mind-Body Harmony</option>
+        </select>
+
+        <textarea id="spiritual-question" 
+                  placeholder="Ask your question about life, spirituality, meditation, or seek guidance..."></textarea>
+        
+        <button class="wisdom-button" onclick="askSpiritual()">
+            Receive Divine Guidance 🙏
+        </button>
+
+        <div id="spiritual-response"></div>
+    </div>
+    
+    <script>
+        async function askSpiritual() {
+            const guru = document.getElementById('guru-select').value;
+            const question = document.getElementById('spiritual-question').value;
+            
+            // Call your AI Empower Heart API
+            const response = await fetch('YOUR_DEPLOYED_URL/api/spiritual-guidance', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({guru: guru, question: question})
+            });
+            
+            const data = await response.json();
+            document.getElementById('spiritual-response').innerHTML = data.response;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}AI Empower Heart - Home{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-4">Welcome to AI Empower Heart</h1>
+        <p class="lead">Advanced spiritual guidance powered by artificial intelligence</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="/dashboard" class="btn btn-primary btn-lg px-4 gap-3">View Journey</a>
+            <a href="/about" class="btn btn-outline-secondary btn-lg px-4">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Spiritual Guidance</h5>
+                <p class="card-text">Get personalized guidance from our AI-powered spiritual gurus.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Pattern Detection</h5>
+                <p class="card-text">Our AI algorithms detect patterns and anomalies in your heart data.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Health Insights</h5>
+                <p class="card-text">Get personalized insights and recommendations for better heart health.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

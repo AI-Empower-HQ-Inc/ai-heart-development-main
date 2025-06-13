@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisper Content Creation - AI Gurus Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ff9a56 0%, #ff6b95 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .upload-section {
+            background: #f8f9ff;
+            border: 2px dashed #667eea;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .upload-section:hover {
+            border-color: #ff6b95;
+            background: #fff5f8;
+        }
+        
+        .upload-section.dragover {
+            border-color: #ff6b95;
+            background: #fff5f8;
+            transform: scale(1.02);
+        }
+        
+        .upload-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .upload-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        
+        .upload-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .content-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .content-type {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .content-type:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+        
+        .content-type.selected {
+            border-color: #ff6b95;
+            background: #fff5f8;
+        }
+        
+        .content-type h4 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .content-type p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .results {
+            margin-top: 30px;
+            padding: 25px;
+            background: #f8f9ff;
+            border-radius: 12px;
+            display: none;
+        }
+        
+        .results.show {
+            display: block;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            display: none;
+        }
+        
+        .loading.show {
+            display: block;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        pre {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎙️ Whisper Content Creation</h1>
+            <p>AI-Powered Spiritual Audio Transcription & Enhancement</p>
+        </div>
+        
+        <div class="content">
+            <div class="upload-section" id="uploadSection">
+                <div class="upload-icon">🎵</div>
+                <h3>Upload Your Spiritual Audio</h3>
+                <p>Drag & drop your audio file here or click to browse</p>
+                <p style="font-size: 0.9em; color: #666; margin-top: 10px;">
+                    Supported: MP3, WAV, M4A, OGG, FLAC, AAC (Max: 25MB)
+                </p>
+                <input type="file" id="audioFile" class="file-input" accept=".mp3,.wav,.m4a,.ogg,.flac,.aac">
+                <button type="button" class="upload-btn" onclick="document.getElementById('audioFile').click()">
+                    📁 Choose Audio File
+                </button>
+            </div>
+            
+            <div class="form-group">
+                <label>Content Type:</label>
+                <div class="content-types" id="contentTypes">
+                    <div class="content-type selected" data-type="meditation_guide">
+                        <h4>🧘 Meditation Guide</h4>
+                        <p>Guided meditation sessions</p>
+                    </div>
+                    <div class="content-type" data-type="spiritual_teaching">
+                        <h4>📚 Spiritual Teaching</h4>
+                        <p>Wisdom and teachings</p>
+                    </div>
+                    <div class="content-type" data-type="sloka_recitation">
+                        <h4>🕉️ Sloka Recitation</h4>
+                        <p>Sanskrit verses & mantras</p>
+                    </div>
+                    <div class="content-type" data-type="prayer_chanting">
+                        <h4>🙏 Prayer Chanting</h4>
+                        <p>Devotional prayers</p>
+                    </div>
+                    <div class="content-type" data-type="dharma_talk">
+                        <h4>⚖️ Dharma Talk</h4>
+                        <p>Ethical teachings</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="language">Language (optional):</label>
+                <select id="language" class="form-control">
+                    <option value="">Auto-detect</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="sa">Sanskrit</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="includeTimestamps" checked> Include Timestamps
+                </label>
+            </div>
+            
+            <button type="button" class="upload-btn" onclick="processAudio()" id="processBtn" disabled>
+                🎙️ Process Audio
+            </button>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Processing your audio with Whisper AI...</p>
+                <p style="font-size: 0.9em; color: #666;">This may take a moment depending on file size</p>
+            </div>
+            
+            <div class="results" id="results">
+                <h3>✨ Processing Results</h3>
+                <div id="resultContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedFile = null;
+        let selectedContentType = 'meditation_guide';
+
+        // File upload handling
+        const uploadSection = document.getElementById('uploadSection');
+        const fileInput = document.getElementById('audioFile');
+        const processBtn = document.getElementById('processBtn');
+
+        // Drag and drop
+        uploadSection.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadSection.classList.add('dragover');
+        });
+
+        uploadSection.addEventListener('dragleave', () => {
+            uploadSection.classList.remove('dragover');
+        });
+
+        uploadSection.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadSection.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFileSelect(files[0]);
+            }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFileSelect(e.target.files[0]);
+            }
+        });
+
+        function handleFileSelect(file) {
+            const maxSize = 25 * 1024 * 1024; // 25MB
+            const allowedTypes = ['.mp3', '.wav', '.m4a', '.ogg', '.flac', '.aac'];
+            const fileExt = '.' + file.name.split('.').pop().toLowerCase();
+
+            if (file.size > maxSize) {
+                showStatus('File too large! Maximum size is 25MB.', 'error');
+                return;
+            }
+
+            if (!allowedTypes.includes(fileExt)) {
+                showStatus('Unsupported file format! Please use: ' + allowedTypes.join(', '), 'error');
+                return;
+            }
+
+            selectedFile = file;
+            uploadSection.innerHTML = `
+                <div class="upload-icon">✅</div>
+                <h3>File Selected</h3>
+                <p><strong>${file.name}</strong></p>
+                <p>Size: ${(file.size / 1024 / 1024).toFixed(2)} MB</p>
+                <button type="button" class="upload-btn" onclick="document.getElementById('audioFile').click()">
+                    🔄 Choose Different File
+                </button>
+            `;
+            processBtn.disabled = false;
+        }
+
+        // Content type selection
+        document.querySelectorAll('.content-type').forEach(type => {
+            type.addEventListener('click', () => {
+                document.querySelectorAll('.content-type').forEach(t => t.classList.remove('selected'));
+                type.classList.add('selected');
+                selectedContentType = type.dataset.type;
+            });
+        });
+
+        function showStatus(message, type) {
+            const statusDiv = document.createElement('div');
+            statusDiv.className = `status ${type}`;
+            statusDiv.textContent = message;
+            
+            const content = document.querySelector('.content');
+            content.insertBefore(statusDiv, content.firstChild);
+            
+            setTimeout(() => {
+                statusDiv.remove();
+            }, 5000);
+        }
+
+        async function processAudio() {
+            if (!selectedFile) {
+                showStatus('Please select an audio file first!', 'error');
+                return;
+            }
+
+            const loading = document.getElementById('loading');
+            const results = document.getElementById('results');
+            const resultContent = document.getElementById('resultContent');
+
+            loading.classList.add('show');
+            results.classList.remove('show');
+            processBtn.disabled = true;
+
+            try {
+                const formData = new FormData();
+                formData.append('audio_file', selectedFile);
+                formData.append('content_type', selectedContentType);
+                
+                const language = document.getElementById('language').value;
+                if (language) {
+                    formData.append('language', language);
+                }
+                
+                formData.append('include_timestamps', document.getElementById('includeTimestamps').checked);
+
+                const response = await fetch('/api/whisper/transcribe', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                loading.classList.remove('show');
+
+                if (result.success) {
+                    showStatus('✅ Audio processed successfully!', 'success');
+                    displayResults(result);
+                } else {
+                    showStatus('❌ Processing failed: ' + result.error, 'error');
+                }
+
+            } catch (error) {
+                loading.classList.remove('show');
+                showStatus('❌ Error: ' + error.message, 'error');
+            }
+
+            processBtn.disabled = false;
+        }
+
+        function displayResults(result) {
+            const resultContent = document.getElementById('resultContent');
+            const results = document.getElementById('results');
+
+            resultContent.innerHTML = `
+                <div class="status success">
+                    <strong>✅ Transcription Complete!</strong><br>
+                    Language: ${result.transcription.language}<br>
+                    Content Type: ${result.content_type.replace('_', ' ').toUpperCase()}<br>
+                    Model: ${result.model_used} (${result.device_used})
+                </div>
+                
+                <h4>📝 Transcribed Text:</h4>
+                <div style="background: #f8f9ff; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <p>${result.transcription.text}</p>
+                </div>
+                
+                <h4>🎯 Enhanced Content:</h4>
+                <pre>${JSON.stringify(result.processed_content, null, 2)}</pre>
+                
+                <h4>📊 Processing Details:</h4>
+                <pre>${JSON.stringify({
+                    audio_duration: result.audio_duration,
+                    timestamp: result.timestamp,
+                    transcription_file: result.transcription_file
+                }, null, 2)}</pre>
+            `;
+
+            results.classList.add('show');
+        }
+
+        // Test text processing
+        async function testTextProcessing() {
+            const testText = "Breathe in deeply and feel the peace within your heart. Let go of all worries and find your center.";
+            
+            try {
+                const response = await fetch('/api/whisper/create-content', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        text: testText,
+                        content_type: 'meditation_guide'
+                    })
+                });
+                
+                const result = await response.json();
+                console.log('Text processing result:', result);
+            } catch (error) {
+                console.error('Text processing error:', error);
+            }
+        }
+
+        // Load health status on page load
+        window.addEventListener('load', async () => {
+            try {
+                const response = await fetch('/api/whisper/health');
+                const health = await response.json();
+                console.log('Whisper service health:', health);
+            } catch (error) {
+                showStatus('⚠️ Warning: Could not connect to Whisper service', 'error');
+            }
+        });
+    </script>
+</body>
+</html>
