@@ -28,7 +28,7 @@ seaborn==0.12.2
 urllib3==2.0.4
 
 # Cache and Session
-redis==5.0.1
+redis==6.2.0
 python-socketio==5.11.0
 
 # Database
